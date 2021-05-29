@@ -34,7 +34,22 @@
     --mb-2: 1rem;
     --mb-3: 1.5rem;
     --mb-4: 2rem;
-    }
-    :root{
+}
+:root{
     --z-fixed: 100;
-    }
+}
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--text-color);
+    line-height: 1.6;
+}
