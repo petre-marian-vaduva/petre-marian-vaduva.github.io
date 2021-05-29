@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,500&display=swap');
+
+
+:root{
+--header-height: 3rem;
+--font-medium: 500;
+}
+:root{
+    --first-color: #3d3aff;    ;
+    --white-color: white;
+    --dark-color: #2a3b47;
+    --text-color: #697477;
+
+}
+:root{
+    --body-font: 'Bitter', serif;
+    --big-font-size: 6.25rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+}
