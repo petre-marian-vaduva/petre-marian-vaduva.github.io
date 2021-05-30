@@ -14,16 +14,20 @@
     <header class="first-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav__logo">Petre-Marian Vaduva</a>
+                <a href="#" class="nav__logo" id="siteContent4">Petre-Marian Vaduva</a>
             </div>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#portofolio" class="nav__link">Portfolio</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">My Cryptocurrency</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link active" id="siteContent5">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link" id="siteContent6">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link" id="siteContent7">Skills</a></li>
+                    <li class="nav__item"><a href="#portofolio" class="nav__link" id="siteContent8">Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link" id="siteContent9">Contact</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link" id="siteContent10">My Cryptocurrency</a></li>
+                    <li class="nav__item"></li><button onclick="changeLanguage('eng')">
+                        En</button></li>
+                    <li class="nav__item"></li><button onclick="changeLanguage('es')">
+                        Jp</button></li>
                 </ul>
             </div>
             <div class="nav__toggle" id="nav-toggle">
@@ -35,7 +39,7 @@
     <main class="1-main">
         <section class="home" id="home">
             <div class="home__container bd-grid">
-                <h1 class="home__title"><span>HELLO </span></h1>
+                <h1 class="home__title" id="siteContent11"><span>HELLO !</span></h1>
 
                 <div class="home__scroll">
                     <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt'></i>Scroll down</a>
@@ -60,8 +64,8 @@
                         has a passion for creating and being involved in the process. Strong problem solving skills,
                         analytical mindset and great attention to details.</p>
                     <div class="about__social">
-                        <a href="https://www.linkedin.com/in/petre-marian-vaduva-9b4b46201/"
-                            class="about__social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://www.linkedin.com/in/petre-marian-vaduva-9b4b46201/" class="about__social-icon"
+                            target="_blank"><i class='bx bxl-linkedin'></i></a>
                         <a href="https://github.com/petre-marian-vaduva" class="about__social-icon" target="_blank"><i
                                 class='bx bxl-github'></i></a>
                     </div>
@@ -116,8 +120,7 @@
                     <img src="basic.jpg" alt="">
 
                     <div class="portofolio__link">
-                        <a href="#"
-                            class="portofolio__link-name">View details</a>
+                        <a href="#" class="portofolio__link-name">View details</a>
                     </div>
                 </div>
             </div>
@@ -151,24 +154,69 @@
             </div>
         </section>
     </main>
-    
+
 
     <footer class="footer section">
         <div class="footer_container bd-grid">
             <div class="footer__data">
-                <p class="footer__text">I'm Petre-Marian Vaduva and this is my website</p>
+                <p class="footer__text" id="siteContent3">I'm Petre-Marian Vaduva and this is my website</p>
             </div>
 
             <div class="footer__data">
-                <a href="https://www.linkedin.com/in/petre-marian-vaduva-9b4b46201/" class="about__social-icon" target="_blank"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/petre-marian-vaduva" class="about__social-icon" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/petre-marian-vaduva-9b4b46201/" class="about__social-icon"
+                    target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/petre-marian-vaduva" class="about__social-icon" target="_blank"><i
+                        class='bx bxl-github'></i></a>
             </div>
         </div>
     </footer>
 
 
-  
+    
+
+
+    <script>
+        // Create a function to change
+        // the hash value of the page
+        function changeLanguage(lang) {
+            location.hash = lang;
+            location.reload();
+        }
+
+        // Define the language reload anchors
+        const language = { 
+            es: {
+                jap: "konnchiwa!",
+                content3: "私はピーターマリアンで、これは私のウェブサイトです。",
+                content4: "ピーター マリアン ヴァドゥヴァ",
+                content5: "ホーム",
+                content6: "私について",
+                content7: "スキル",
+                content8: "ポートフォリオ",
+                content9: "お問い合わせ",
+                content10: "私の暗号通貨",
+                content11: "こんにちは !"
+            },
+        };
+
+        // Check if a hash value exists in the URL
+        if (window.location.hash) {
+
+            // Set the content of the webpage 
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                siteContent3.textContent = language.es.content3;
+                siteContent4.textContent = language.es.content4;
+                siteContent5.textContent = language.es.content5;
+                siteContent6.textContent = language.es.content6;
+                siteContent7.textContent = language.es.content7;
+                siteContent8.textContent = language.es.content8;
+                siteContent9.textContent = language.es.content9;
+                siteContent10.textContent = language.es.content10;
+                siteContent11.textContent = language.es.content11;
+            }
+        }
+    </script>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="portfolio.js"></script>
