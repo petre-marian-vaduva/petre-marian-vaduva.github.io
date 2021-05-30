@@ -50,15 +50,15 @@
         </section>
 
         <section class="about section" id="about">
-            <h2 class="section-title">About</h2>
+            <h2 class="section-title" id="siteContent12">About</h2>
             <div class="about__container bd-grid">
                 <div class="about__img">
                     <img src="rica1.png" alt="">
                 </div>
                 <div>
-                    <h2 class="class__subtitle">I'm Petre-Marian Vaduva</h2>
+                    <h2 class="class__subtitle" id="siteContent13">I'm Petre-Marian Vaduva</h2>
                     <span class="about__proffesion">
-                        <h3>Web developer</h3>
+                        <h3 id="siteContent14">Web developer</h3>
                     </span>
                     <p class="about__text">I am a reliable and motivated individual who is keen to learn new skills and
                         has a passion for creating and being involved in the process. Strong problem solving skills,
@@ -186,7 +186,6 @@
         // Define the language reload anchors
         const language = { 
             es: {
-                jap: "konnchiwa!",
                 content3: "私はピーターマリアンで、これは私のウェブサイトです。",
                 content4: "ピーター マリアン ヴァドゥヴァ",
                 content5: "ホーム",
@@ -195,7 +194,11 @@
                 content8: "ポートフォリオ",
                 content9: "お問い合わせ",
                 content10: "私の暗号通貨",
-                content11: "こんにちは !"
+                content11: "こんにちは !",
+                content12: "私について !",
+                content13: "私はピーターマリアンです",
+                content14: "ウェブデベロッパー",
+                
             },
         };
 
@@ -214,6 +217,9 @@
                 siteContent9.textContent = language.es.content9;
                 siteContent10.textContent = language.es.content10;
                 siteContent11.textContent = language.es.content11;
+                siteContent12.textContent = language.es.content12;
+                siteContent13.textContent = language.es.content13;
+                siteContent14.textContent = language.es.content14;
             }
         }
     </script>
