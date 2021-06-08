@@ -182,7 +182,7 @@ display: block;
     padding-bottom: var(--mb-4);
 }
 .home__scroll-link{
-    writing-mode: vertical-lr;
+    writing-mode:vertical-lr;
     transform: rotate(-180deg);
     color: var(--white-color);
 

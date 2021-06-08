@@ -42,7 +42,7 @@
                 <h1 class="home__title" id="siteContent11"><span>HELLO !</span></h1>
 
                 <div class="home__scroll">
-                    <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt'></i>Scroll down</a>
+                    <a href="#about" class="home__scroll-link" id="siteContent21"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
                 </div>
 
                 <img src="rica1.png" alt="" class="home__img">
@@ -60,7 +60,8 @@
                     <span class="about__proffesion">
                         <h3 id="siteContent14">Web developer</h3>
                     </span>
-                    <p class="about__text">I am a reliable and motivated individual who is keen to learn new skills and
+                    <p class="about__text" id="siteContent20">I am a reliable and motivated individual who is keen to
+                        learn new skills and
                         has a passion for creating and being involved in the process. Strong problem solving skills,
                         analytical mindset and great attention to details.</p>
                     <div class="about__social">
@@ -172,7 +173,7 @@
     </footer>
 
 
-    
+
 
 
     <script>
@@ -184,7 +185,7 @@
         }
 
         // Define the language reload anchors
-        const language = { 
+        const language = {
             es: {
                 content3: "私はペトレ マリアンで、これは私のウェブサイトです。",
                 content4: "ペトレ マリアン ヴァドゥヴァ",
@@ -202,7 +203,9 @@
                 content16: "ポートフォリオ",
                 content17: "お問い合わせ",
                 content18: "Web開発",
-                content19: "フレームワーク"
+                content19: "フレームワーク",
+                content20: "私は信頼のできる熱心で、新しいスキルを学ぶことに意欲的な人です。また様々なものを創り出しそのプロセスに深く関わることが好きです。熟練した問題解決スキル、分析的な思考、また 詳細への細かい気配りができます。",
+                content21: ""
             },
         };
 
@@ -229,6 +232,8 @@
                 siteContent17.textContent = language.es.content17;
                 siteContent18.textContent = language.es.content18;
                 siteContent19.textContent = language.es.content19;
+                siteContent20.textContent = language.es.content20;
+                siteContent21.textContent = language.es.content21;
             }
         }
     </script>
